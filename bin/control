@@ -44,6 +44,8 @@ function start_apache() {
 
 function start() {
     [ ! -d "${OPENSHIFT_REPO_DIR}/logs" ] && { mkdir -p "${OPENSHIFT_REPO_DIR}/logs"; chown ${OPENSHIFT_GEAR_UUID}:${OPENSHIFT_GEAR_UUID} "${OPENSHIFT_REPO_DIR}/logs"   ;};
+    [ ! -d "${OPENSHIFT_REPO_DIR}/etc" ] && mkdir -p "${OPENSHIFT_REPO_DIR}/etc";
+    [ ! -f "${OPENSHIFT_REPO_DIR}/etc/magic" ] && cp "/etc/magic"  "${OPENSHIFT_REPO_DIR}/etc/magic";
     if [ -f "${OPENSHIFT_REPO_DIR}app.py" ]; then
         start_app
     else
