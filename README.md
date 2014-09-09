@@ -5,7 +5,6 @@ This cartridge provides [Python WSGI](https://www.python.org/) on Jelastic Platf
 
 WSGI (stands for Web Server Gateway Interface) is an interface specification for simple and universal interaction between web server and Python web applications. Both sides interfaces are specified (i.e. server and application), what means that if application, framework or toolkit is written to WSGI specification, then it will run on any server written to that specification. Therefore you can easily host your Python application with Jelastic.
 
-
 For more details refer to the [Jelastic documentation](http://ops-docs.jelastic.com/python-hosting).
 
 Follow the [link](http://ops-docs.jelastic.com/private-add-cartridge) in order to find out how to enable the current cartridge at Jelastic dashboard.
