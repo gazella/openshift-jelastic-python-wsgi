@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source /etc/jelastic/environment;
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 source "${OPENSHIFT_PYTHON_DIR}/versions/${OPENSHIFT_PYTHON_VERSION}/lib/create-virtenv"
 source "${OPENSHIFT_PYTHON_DIR}/versions/${OPENSHIFT_PYTHON_VERSION}/lib/python_config"
