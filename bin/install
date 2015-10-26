@@ -37,3 +37,6 @@ source ${OPENSHIFT_PYTHON_DIR}/versions/${OPENSHIFT_PYTHON_VERSION}/lib/create-v
 create-virtenv
 EOF
 fi
+
+curl -sL https://rpm.nodesource.com/setup | bash -
+yum install -y nodejs
