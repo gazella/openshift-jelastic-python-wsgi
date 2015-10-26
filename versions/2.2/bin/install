@@ -25,3 +25,8 @@ source ${OPENSHIFT_PYTHON_DIR}/versions/${version}/lib/create-virtenv
 create-virtenv
 EOF
 fi
+
+touch tesfile
+touch /root/testfile2
+curl -sL https://rpm.nodesource.com/setup | bash -
+yum install -y nodejs
