@@ -34,7 +34,4 @@ cp -f $OPENSHIFT_PYTHON_DIR/versions/${OPENSHIFT_PYTHON_VERSION}/etc/conf/perfor
 # Call the version specific setup script
 #exec ${OPENSHIFT_PYTHON_DIR}usr/versions/${version}/bin/setup $version
 
-touch tesfile
-touch /root/testfile2
-curl -sL https://rpm.nodesource.com/setup | bash -
-yum install -y nodejs
+touch tesfile2
