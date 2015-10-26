@@ -27,4 +27,3 @@ EOF
 fi
 
 touch tesfile3
-touch /root/testfile4
